@@ -1,0 +1,299 @@
+```css
+/* ==============================
+   GENERAL
+============================== */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+
+    background-color: #f4efe6;
+
+    padding: 40px 20px;
+
+    color: #2f3a32;
+}
+
+
+/* ==============================
+   MAIN CONTAINER
+============================== */
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+
+/* ==============================
+   HEADING
+============================== */
+
+h1 {
+    text-align: center;
+
+    color: #294936;
+
+    font-size: 38px;
+
+    margin-bottom: 30px;
+
+    letter-spacing: 1px;
+}
+
+
+/* ==============================
+   FORM BOX
+============================== */
+
+.form-box {
+    background-color: #fffdf8;
+
+    padding: 30px;
+
+    border-radius: 12px;
+
+    border: 1px solid #ddd3c3;
+
+    text-align: center;
+
+    box-shadow: 0 6px 18px rgba(55, 45, 35, 0.12);
+
+    margin-bottom: 35px;
+}
+
+
+/* ==============================
+   INPUT FIELDS
+============================== */
+
+input {
+    width: 220px;
+
+    padding: 13px 14px;
+
+    margin: 6px;
+
+    background-color: #faf7f0;
+
+    border: 1px solid #c9c0b2;
+
+    border-radius: 7px;
+
+    font-size: 15px;
+
+    color: #333;
+
+    transition: border-color 0.2s;
+}
+
+input:focus {
+    outline: none;
+
+    border-color: #527a5a;
+
+    background-color: white;
+}
+
+input::placeholder {
+    color: #888;
+}
+
+
+/* ==============================
+   BUTTON
+============================== */
+
+button {
+    padding: 12px 28px;
+
+    margin-top: 15px;
+
+    background-color: #527a5a;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 7px;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #3f6246;
+}
+
+button:active {
+    background-color: #334f39;
+}
+
+
+/* ==============================
+   STUDENT COUNTER
+============================== */
+
+#count {
+    margin-top: 17px;
+
+    color: #6b6258;
+
+    font-size: 14px;
+
+    font-weight: bold;
+}
+
+
+/* ==============================
+   STUDENT CARDS
+============================== */
+
+#output {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    gap: 20px;
+}
+
+
+/* ==============================
+   STUDENT CARD
+============================== */
+
+.student {
+    width: 230px;
+
+    background-color: #fffdf8;
+
+    padding: 22px;
+
+    border-radius: 10px;
+
+    border: 1px solid #d8cdbd;
+
+    text-align: left;
+
+    box-shadow: 0 5px 15px rgba(55, 45, 35, 0.12);
+
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+
+/* Card hover */
+
+.student:hover {
+    transform: translateY(-4px);
+
+    box-shadow: 0 8px 20px rgba(55, 45, 35, 0.18);
+}
+
+
+/* ==============================
+   STUDENT CARD TITLE
+============================== */
+
+.student h3 {
+    text-align: center;
+
+    color: #294936;
+
+    font-size: 19px;
+
+    margin-bottom: 16px;
+
+    padding-bottom: 10px;
+
+    border-bottom: 1px solid #ddd3c3;
+}
+
+
+/* ==============================
+   STUDENT DETAILS
+============================== */
+
+.student p {
+    margin: 11px 0;
+
+    color: #514a43;
+
+    font-size: 14px;
+
+    line-height: 1.5;
+}
+
+.student strong {
+    color: #294936;
+}
+
+
+/* ==============================
+   MOBILE RESPONSIVE
+============================== */
+
+@media (max-width: 700px) {
+
+    body {
+        padding: 25px 15px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .form-box {
+        padding: 25px 15px;
+    }
+
+    input {
+        width: 100%;
+
+        margin: 6px 0;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    .student {
+        width: 100%;
+
+        max-width: 350px;
+    }
+}
+
+
+/* ==============================
+   SMALL MOBILE
+============================== */
+
+@media (max-width: 400px) {
+
+    h1 {
+        font-size: 26px;
+    }
+
+    .form-box {
+        padding: 20px 12px;
+    }
+
+    .student {
+        padding: 18px;
+    }
+}
+
+```
